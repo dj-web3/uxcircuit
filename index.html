@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UXCircuit - AI won't replace designers. Designers who use AI will.</title>
+<title>UX Circuit - AI won't replace designers. Designers who use AI will.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -141,8 +141,8 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
 .cta-inner h2 { font-family: 'Newsreader', serif; font-size: clamp(28px, 4vw, 42px); font-weight: 400; line-height: 1.2; letter-spacing: -0.025em; color: var(--black); margin-bottom: 36px; }
 
 /* FOOTER */
-footer { padding: 22px 40px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border); }
-.foot-logo { display: flex; align-items: center; text-decoration: none; }
+/* footer css moved below */
+.foot-logo { display: block; text-decoration: none; font-family: 'Geist', system-ui, sans-serif; font-size: 22px; font-weight: 700; color: #9B9A97; letter-spacing: -0.4px; text-align: center; }
 .foot-copy { font-size: 12px; color: var(--mid-gray); }
 
 /* RESPONSIVE */
@@ -154,7 +154,7 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
   .split-left { position: static; }
   .logos-bar::before, .logos-bar::after { width: 60px; }
   .cards, .vgrid, .rgrid { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: 6px; text-align: center; padding: 20px; }
+  footer { padding: 32px 20px; }
 }
 
 /* REVEAL */
@@ -174,18 +174,21 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
 .lightbox-inner iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
 .lightbox-close { position: absolute; top: -44px; right: 0; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.7); font-size: 28px; line-height: 1; padding: 4px 8px; transition: color 0.18s; font-family: 'Geist', sans-serif; }
 .lightbox-close:hover { color: #fff; }
+
+/* FOOTER SOCIAL */
+footer { padding: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; border-top: 1px solid var(--border); text-align: center; width: 100%; }
+.foot-social { display: flex; align-items: center; gap: 24px; }
+.foot-social-link { color: var(--text-secondary); display: flex; align-items: center; transition: color 0.18s; }
+.foot-social-link:hover { color: var(--black); }
+.foot-social-link svg { width: 22px; height: 22px; }
+
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#"><svg width="116" height="22" viewBox="0 0 116 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="28" height="22" rx="4" fill="#0D0D0D"/>
-  <text x="14" y="15.5" text-anchor="middle" font-family="Geist,sans-serif" font-size="10" font-weight="600" fill="white" letter-spacing="0.8">UX</text>
-  <text x="35" y="15.5" font-family="Geist,sans-serif" font-size="13.5" font-weight="500" fill="#0D0D0D" letter-spacing="-0.4">Circuit</text>
-  <circle cx="111" cy="5" r="2" fill="#0D0D0D" opacity="0.2"/>
-</svg></a>
+  <a class="nav-logo" href="#"><svg width="163" height="28" viewBox="0 0 163 28" fill="none" xmlns="http://www.w3.org/2000/svg"><text x="0" y="20" font-family="Geist,system-ui,sans-serif" font-size="22" font-weight="700" fill="#0D0D0D" letter-spacing="-0.4">UX</text><text x="37" y="20" font-family="Geist,system-ui,sans-serif" font-size="22" font-weight="700" fill="#0D0D0D" letter-spacing="-0.4">Circuit</text></svg></a>
   <button class="btn-pill" data-tally-open="9qOjr5" data-tally-layout="modal" data-tally-hide-title="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join waitlist</button>
 </nav>
 
@@ -288,7 +291,7 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
     <p class="section-label" style="color:rgba(255,255,255,0.35); text-align:center;">So what do you do now?</p>
     <blockquote class="sowhat-quote">You don't need more tutorials.<br>You need a different way of learning.</blockquote>
     <div class="sowhat-prose reveal">
-      <p>UXCircuit is built for how design actually works today.</p>
+      <p>UX Circuit is built for how design actually works today.</p>
       <p>Not just learning tools.<br>Not just building random case studies.</p>
       <p>But learning how to <strong>think, build, and work using AI.</strong></p>
       <p>So you're not just keeping up.</p>
@@ -310,7 +313,7 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
       </div>
       <div class="split-right">
         <div class="narrative">
-          <p>UXCircuit is built for how design actually works today.</p>
+          <p>UX Circuit is built for how design actually works today.</p>
           <p>Not just learning tools.<br>Not just building random case studies.</p>
           <p>But learning how to <strong>think, build, and work using AI.</strong></p>
           <p>So you're not just keeping up.</p>
@@ -457,7 +460,7 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
         <p>I'm a product designer who has delivered work for companies like Microsoft,<br>PwC, and Citi.</p>
         <p>I currently work across AI and blockchain, with work recognized in the<br>Ethereum ecosystem.</p>
         <p>Over time, I've seen a clear shift - how design actually works has changed.</p>
-        <p>UXCircuit is built around that shift.</p>
+        <p>UX Circuit is built around that shift.</p>
         <p>Not theory.<br>Not outdated approaches.<br>Just how design works today.</p>
       </div>
     </div>
@@ -477,12 +480,22 @@ footer { padding: 22px 40px; display: flex; align-items: center; justify-content
 
 <!-- FOOTER -->
 <footer>
-  <a class="foot-logo" href="#"><svg width="116" height="22" viewBox="0 0 116 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="28" height="22" rx="4" fill="#C9C8C4"/>
-  <text x="14" y="15.5" text-anchor="middle" font-family="Geist,sans-serif" font-size="10" font-weight="600" fill="white" letter-spacing="0.8">UX</text>
-  <text x="35" y="15.5" font-family="Geist,sans-serif" font-size="13.5" font-weight="500" fill="#9B9A97" letter-spacing="-0.4">Circuit</text>
-</svg></a>
-  <span class="foot-copy">© UXCircuit 2026</span>
+  <a class="foot-logo" href="#">UX Circuit</a>
+  <div class="foot-social">
+    <a class="foot-social-link" href="https://www.linkedin.com/in/dhananjay-mukerji/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.8"/></svg>
+    </a>
+    <a class="foot-social-link" href="https://www.instagram.com/theuxdj/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    </a>
+    <a class="foot-social-link" href="https://x.com/theuxdj" target="_blank" rel="noopener" aria-label="X">
+      <svg width="20" height="20" viewBox="0 0 300 271" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"/></svg>
+    </a>
+    <a class="foot-social-link" href="https://dhananjaym.medium.com/" target="_blank" rel="noopener" aria-label="Medium">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="6.5" cy="12" rx="4.5" ry="6" stroke="currentColor" stroke-width="1.8"/><ellipse cx="16" cy="12" rx="3" ry="6" stroke="currentColor" stroke-width="1.8"/><ellipse cx="22" cy="12" rx="1.5" ry="6" stroke="currentColor" stroke-width="1.8"/></svg>
+    </a>
+  </div>
+  <span class="foot-copy">© UX Circuit 2026</span>
 </footer>
 
 <script>
