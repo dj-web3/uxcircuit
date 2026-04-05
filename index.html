@@ -26,6 +26,8 @@ body { font-family: 'Geist', sans-serif; background: var(--white); color: var(--
 nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); padding: 0 40px; height: 52px; display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; text-decoration: none; }
 .btn-pill { display: inline-block; background: var(--black); color: var(--white); padding: 10px 22px; border-radius: 100px; font-size: 13px; font-weight: 500; text-decoration: none; border: none; cursor: pointer; font-family: 'Geist', sans-serif; transition: opacity 0.18s; white-space: nowrap; }
+.btn-pill-inverted { display: inline-block; background: var(--white); color: var(--black); padding: 10px 22px; border-radius: 100px; font-size: 13px; font-weight: 500; text-decoration: none; border: none; cursor: pointer; font-family: 'Geist', sans-serif; transition: opacity 0.18s; white-space: nowrap; }
+.btn-pill-inverted:hover { opacity: 0.85; }
 .btn-pill:hover { opacity: 0.72; }
 
 /* LAYOUT */
@@ -299,29 +301,8 @@ footer { padding: 40px; display: flex; flex-direction: column; align-items: cent
       <p>So you're not just keeping up.</p>
       <p>You're building work that stands out.</p>
     </div>
-  </div>
-</section>
-
-<!-- 5th SECTION -->
-<section class="section-wrap">
-  <div class="container-wide">
-    <div class="split reveal">
-      <div class="split-left">
-        <p class="section-label">So what do you do now?</p>
-        <h2 class="split-h2">You don't need more tutorials.<br>You need a different way of learning.</h2>
-        <div style="margin-top:36px;">
-          <button class="btn-pill" data-tally-open="9qOjr5" data-tally-layout="modal" data-tally-hide-title="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join waitlist</button>
-        </div>
-      </div>
-      <div class="split-right">
-        <div class="narrative">
-          <p>UX Circuit is built for how design actually works today.</p>
-          <p>Not just learning tools.<br>Not just building random case studies.</p>
-          <p>But learning how to <strong>think, build, and work using AI.</strong></p>
-          <p>So you're not just keeping up.</p>
-          <p>You're building work that stands out.</p>
-        </div>
-      </div>
+    <div class="reveal" style="margin-top:40px;">
+      <button class="btn-pill-inverted" data-tally-open="9qOjr5" data-tally-layout="modal" data-tally-hide-title="1" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">Join waitlist</button>
     </div>
   </div>
 </section>
